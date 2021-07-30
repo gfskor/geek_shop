@@ -1,0 +1,628 @@
+/* Сброс */
+
+body {
+    margin: 0;
+    font-family: Lato;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* КОНТЕЙНЕР */
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* ШАПКА */
+.header {
+    background: url(../images/Rectangle_25.svg);
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Левая часть: логотип, поиск */
+.header_logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.logo_img {
+    padding-left: 121px;
+    padding-right: 20px;
+}
+
+/* Правая часть: меню, профиль, корзина */
+.header_button {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;   
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.user_img,
+.bucket_img {
+    padding: 10px 10px;
+}
+
+
+.set_img {
+    position: relative;
+    padding: 12px 10px;
+}
+
+/* БЛОК МЕНЮ */
+.menu_block {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 74px;
+}
+
+.menu_item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+/* Заголовок меню */
+.menu_header_1 {
+    font-style: normal;
+    font-weight: 700 bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    width: 232px;
+    padding-top: 37px;
+    padding-left: 34px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+/* Название подразделов */
+.menu_header_2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    padding-bottom: 11px;
+    padding-left: 34px;
+}
+
+/* Ссылки на товары */
+.menu_link {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-decoration: none;
+    padding-bottom: 11px;
+    padding-left: 54.5px;
+}
+
+.menu_link:hover {
+    color: #F16D7F;
+}
+
+.set_img:hover .menu_block {
+    display: flex;
+}
+
+
+
+
+/* Блок с картинкой с мужчиной */
+.man {
+    background: url(../images/background_img.svg) center no-repeat;
+    display: flex;
+    height: 764px;
+
+}
+
+.main_man {
+    width: 50%;
+}
+
+
+.main_text {
+    width: 50%;
+    padding-right: 331px;
+    padding-left: 91px;
+}
+
+/* Текстовый блок */
+.text_block {
+    display: flex;
+    flex-direction: column;
+    padding-top: 290px;
+    position: relative;
+}
+
+/* Текст THE BRAND */
+.brand_text_first {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    margin: 0;
+}
+
+/* Текст OF LUXERIOUS FASHION */
+.brand_text_second {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+    margin: 0;
+}
+
+/* Класс для изменения цвета слова внутри текста */
+.color_text {
+    color: #F16D7F;
+}
+
+/* Розовый блок возле текста */
+.text_block:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 92px;
+    background-color: #F16D7F;
+    position: absolute;
+    left: -23px;
+    top: 293px;
+}
+
+/*  БЛОК С ТОВАРАМИ */
+.goods {
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    padding-left: 230px;
+    padding-right: 230px;
+    margin: 0 auto;
+}
+
+
+/* Блок с тремя товарами */
+.goods_small {
+    margin-bottom: 30px;
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+}
+
+.goods_positions {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+}
+
+.goods_1,
+.goods_2 {
+    padding-right: 30px;
+    height: 260px;
+}
+
+.goods_3 {
+    height: 260px;
+}
+
+.for_goods_text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small_white_text {
+    font-weight: 400;
+    line-height: 19, 2px;
+    font-size: 16px;
+    color: #FFFFFF;
+    height: 85%;
+    width: 95%;
+}
+
+.big_pink_text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28, 8px;
+    color: #F16D7F;
+    height: 105%;
+    width: 95%;
+}
+
+/* Блок с одним товаром */
+.goods_wide {
+    display: flex;
+    position: relative;
+    height: 180px;
+    display: flex;
+}
+
+.white_text_accesories {
+    font-weight: 400;
+    line-height: 19, 2px;
+    font-size: 16px;
+    color: #FFFFFF;
+    height: 65%;
+    width: 100%;
+}
+
+.pink_text_accesories {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28, 8px;
+    color: #F16D7F;
+    height: 90%;
+    width: 100%;
+}
+
+/* Тень для карточек с товарами */
+.shadow {
+    position: absolute;
+}
+
+/* Блок с текстом "Featured Items" */
+.featured_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 96px;
+}
+
+.featured_items_header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    margin: 0 auto;
+}
+
+.featured_items_text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+
+/* Блок с большими карточками товаров */
+.goods_big {
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-left: 230px;
+    padding-right: 230px;
+
+}
+
+/* Первая группа карточек */
+.goods_group_1 {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+/* Вторая группа карточек */
+.goods_group_2 {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 48.5px;
+}
+
+/* Общий серый фон для карточек */
+.product_background {
+    position: relative;
+    height: 581px;
+    width: 360px;
+}
+
+/* Карточки продуктов */
+.product_img {
+    height: 420px;
+    width: 360px;
+    position: absolute;
+}
+
+/* Отдельный класс для карточки с женщиной, т.к. там есть фон у картинки */
+.product_img_w {
+    height: 400px;
+    width: 141, 94px;
+    position: absolute;
+    padding-left: 7%;
+}
+
+.product_1,
+.product_2,
+.product_3 {
+    padding-right: 30px;
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Текст на карточках */
+.product_text_big {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    position: absolute;
+    margin-top: 444px;
+    padding-left: 18px;
+}
+
+.product_text_small {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    position: absolute;
+    margin-top: 473px;
+    padding-left: 18px;
+}
+
+.product_price {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19, 2px;
+    color: #F16D7F;
+    position: absolute;
+    margin-top: 542px;
+    padding-left: 18px;
+}
+
+/* Кнопка обзора всех продуктов */
+.button_all_product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 95.5px;
+}
+
+.button_all_product_img {
+    position: absolute;
+}
+
+.button_all_product_text {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-decoration: none;
+    padding-top: 14.5px;
+}
+
+.hover:hover {
+    color: #a79e9e;
+}
+
+/* Блок с преимуществами */
+.advantages {
+    background: url(/images/advantages_back.png) center no-repeat;
+    height: 341px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantage_block {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantage_header {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin: 0;
+    padding-top: 28px;
+}
+
+.advantage_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+    margin: 0;
+    padding-top: 16px;
+}
+
+/* Футер с цитатой и подпиской */
+.footer_about {
+    background: url(/images/footer_background.png) center no-repeat,
+        url(/images/footer_main_img.png) center no-repeat;
+
+    height: 448px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+
+/* БЛОК С ФОТОГРАФИЕЙ И ЦИТАТОЙ */
+.quote_block {
+    flex-grow: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    align-self: center;
+}
+
+/* БЛОК С ТЕКСТОМ И ПОДПИСКОЙ */
+.subscribe_block {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    padding-left: 100px;
+}
+
+/* Текст SUBSCRIBE FOR OUR NEWLETTER AND PROMOTION */
+.subscribe_text_header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40, 13px;
+    text-align: center;
+    color: #222224;
+    margin: 0;
+}
+
+.subscribe_text_paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30, 1px;
+    color: #222224;
+    margin: 0;
+    padding-top: 8px;
+}
+
+/* Блок поля ввода и кнопки */
+.subscribe_form {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    width: 356px;
+}
+
+.subscribe_field {
+    width: 256px;
+    height: 49px;
+    display: flex;
+    font-display: row;
+}
+
+.subscribe_button {
+    width: 100px;
+    height: 49px;
+    display: flex;
+    font-display: row;
+}
+
+/* Поле для ввода эл. почты */
+.form_field_img {
+    position: absolute;
+    display: flex;
+}
+
+.form_field_text {
+    position: relative;
+    padding-left: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222224;
+    opacity: 0.67;
+}
+
+/* Кнопка отправки эл. почты */
+
+.form_button_img {
+    position: relative;
+    display: flex;
+}
+
+.form_button_text {
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+/* КОНТАКТЫ И СОЦ. СЕТИ */
+.footer_contact {
+    background: url(/images/footer_background_contact.png);
+    height: 79px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_contact_text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.footer_social {
+    width: 50%;
+}
+
+.footer_social_ico {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_padding {
+    padding-right: 7px;
+}
