@@ -475,12 +475,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
 }
 
 .advantage_header {
-    font-style: normal;
     font-weight: 400;
-    font-size: 19.96px;
+    font-size: 20px;
     line-height: 24px;
     color: #FBFBFB;
     margin: 0;
@@ -488,9 +488,8 @@ body {
 }
 
 .advantage_text {
-    font-style: normal;
     font-weight: 300;
-    font-size: 13.972px;
+    font-size: 14px;
     line-height: 17px;
     text-align: center;
     color: #FBFBFB;
@@ -521,13 +520,12 @@ body {
 }
 
 .quote_text {
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     color: #222224;
-    align-self: center;
+    padding-top: 20px;
 }
 
 /* БЛОК С ТЕКСТОМ И ПОДПИСКОЙ */
@@ -538,28 +536,22 @@ body {
     align-items: flex-start;
     justify-content: center;
     width: 50%;
-    padding-left: 100px;
 }
 
 /* Текст SUBSCRIBE FOR OUR NEWLETTER AND PROMOTION */
 .subscribe_text_header {
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    line-height: 40, 13px;
+    line-height: 40px;
     text-align: center;
     color: #222224;
-    margin: 0;
 }
 
 .subscribe_text_paragraph {
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 30, 1px;
+    line-height: 30px;
     color: #222224;
-    margin: 0;
-    padding-top: 8px;
 }
 
 /* Блок поля ввода и кнопки */
@@ -567,21 +559,23 @@ body {
     display: flex;
     flex-direction: row;
     padding-top: 15px;
-    width: 356px;
 }
 
 .subscribe_field {
     width: 256px;
     height: 49px;
     display: flex;
-    font-display: row;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
 .subscribe_button {
-    width: 100px;
-    height: 49px;
     display: flex;
     font-display: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Поле для ввода эл. почты */
@@ -591,9 +585,7 @@ body {
 }
 
 .form_field_text {
-    position: relative;
     padding-left: 22px;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -604,21 +596,17 @@ body {
 /* Кнопка отправки эл. почты */
 
 .form_button_img {
-    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form_button_text {
     position: absolute;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
     color: #FFFFFF;
-    margin: 0;
-    padding-left: 15px;
-    padding-top: 15px;
 }
 
 /* КОНТАКТЫ И СОЦ. СЕТИ */
@@ -639,7 +627,6 @@ body {
 }
 
 .contact_text {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -651,7 +638,6 @@ body {
 }
 
 .footer_social_ico {
-
     display: flex;
     align-items: center;
     justify-content: center;
