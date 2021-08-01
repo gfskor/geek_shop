@@ -153,23 +153,21 @@ body {
 }
 
 /* Блок с изображением */
-.main_man {
+.man_img {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Блок для текста */
-.main_text {
+.man_text {
     width: 50%;
-    padding-right: 331px;
-    padding-left: 91px;
-}
-
-/* Текстовый блок */
-.text_block {
     display: flex;
     flex-direction: column;
-    padding-top: 290px;
+    justify-content: center;
     position: relative;
+    text-decoration: none;
 }
 
 /* Текст THE BRAND */
@@ -177,7 +175,7 @@ body {
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
-    margin: 0;
+    color: #222222;
 }
 
 /* Текст OF LUXERIOUS FASHION */
@@ -185,7 +183,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 38.4px;
-    margin: 0;
+    color: #222222;
 }
 
 /* Класс для изменения цвета слова внутри текста */
@@ -194,7 +192,7 @@ body {
 }
 
 /* Розовый блок возле текста */
-.text_block:before {
+.man_text:before {
     content: "";
     display: block;
     width: 12px;
@@ -202,7 +200,7 @@ body {
     background-color: #F16D7F;
     position: absolute;
     left: -23px;
-    top: 293px;
+    top: 340px;
 }
 
 /*  БЛОК С ТОВАРАМИ */
