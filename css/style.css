@@ -10,12 +10,6 @@ body {
     font-style: normal;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
 /* КОНТЕЙНЕР */
 .container {
     max-width: 1600px;
@@ -79,17 +73,14 @@ body {
     justify-content: space-between;
     min-width: 160px;
     min-height: 75px;
-
 }
 
 .set_img {
     width: 32px;
-
 }
 
 .user_img {
     width: 29px;
-
 }
 
 .bucket_img {
@@ -224,7 +215,6 @@ body {
     margin-bottom: 90px;
 }
 
-
 /* Блок с тремя товарами */
 .goods_small {
     margin-bottom: 30px;
@@ -322,7 +312,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
 .featured_items_header {
@@ -429,7 +419,7 @@ body {
 }
 
 /* Кнопка обзора всех продуктов */
-.button_all_product {
+.all_product {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -438,7 +428,7 @@ body {
     padding-bottom: 95.5px;
 }
 
-.button_all {
+.all_product_button {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -448,7 +438,7 @@ body {
     border: 1px solid #FF6A6A;
 }
 
-.button_all_product_text {
+.all_product_button_text {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -497,7 +487,7 @@ body {
     padding-top: 16px;
 }
 
-/* Футер с цитатой и подпиской */
+/* ФУТЕР С ЦИТАТОЙ И ПОДПИСКОЙ */
 .footer_about {
     background: url(../images/footer_background.png) center no-repeat,
         url(../images/footer_main_img.png) center no-repeat;
@@ -594,7 +584,6 @@ body {
 }
 
 /* Кнопка отправки эл. почты */
-
 .form_button_img {
     display: flex;
     align-items: center;
@@ -643,6 +632,7 @@ body {
     justify-content: center;
 }
 
+/* ОТСТУПЫ ДЛЯ КНОПОК СОЦ. СЕТЕЙ */
 .social_padding {
     padding-right: 7px;
 }
