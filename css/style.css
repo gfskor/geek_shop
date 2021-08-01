@@ -1,8 +1,13 @@
 /* Сброс */
 
-body {
+* {
     margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: Lato;
+    font-style: normal;
 }
 
 *,
@@ -22,45 +27,73 @@ body {
     background: url(../images/Rectangle_25.svg);
     min-height: 75px;
     display: flex;
-    justify-content: space-between;
 }
+
 
 /* Левая часть: логотип, поиск */
 .header_logo {
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    justify-content: flex-start;
+    width: 50%;
     list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
+}
 
+.header_logo_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 101px;
+    min-height: 75px;
+    padding-left: 240px;
 }
 
 .logo_img {
-    padding-left: 121px;
-    padding-right: 20px;
+    width: 44px;
+    padding-bottom: 10px;
+}
+
+.search_img {
+    width: 26px;
+    padding-left: 41px;
+
+}
+
+.img_link {
+    padding: 25px 0px;
 }
 
 /* Правая часть: меню, профиль, корзина */
 .header_button {
     display: flex;
     align-items: center;
-    flex-grow: 1;   
-    justify-content: center;
+    justify-content: flex-end;
+    width: 50%;
     list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
+    padding-right: 240px;
 }
 
-.user_img,
-.bucket_img {
-    padding: 10px 10px;
-}
+.header_button_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 160px;
+    min-height: 75px;
 
+}
 
 .set_img {
-    position: relative;
-    padding: 12px 10px;
+    width: 32px;
+
+}
+
+.user_img {
+    width: 29px;
+
+}
+
+.bucket_img {
+    width: 32px;
 }
 
 /* БЛОК МЕНЮ */
@@ -68,7 +101,7 @@ body {
     display: none;
     position: absolute;
     background-color: #fff;
-    top: 74px;
+    top: 75px;
 }
 
 .menu_item {
@@ -79,7 +112,6 @@ body {
 
 /* Заголовок меню */
 .menu_header_1 {
-    font-style: normal;
     font-weight: 700 bold;
     font-size: 14px;
     line-height: 17px;
@@ -93,7 +125,6 @@ body {
 
 /* Название подразделов */
 .menu_header_2 {
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -105,7 +136,6 @@ body {
 /* Ссылки на товары */
 .menu_link {
     display: block;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -123,22 +153,20 @@ body {
     display: flex;
 }
 
-
-
-
 /* Блок с картинкой с мужчиной */
 .man {
     background: url(../images/background_img.svg) center no-repeat;
     display: flex;
     height: 764px;
-
+    margin-bottom: 65px;
 }
 
+/* Блок с изображением */
 .main_man {
     width: 50%;
 }
 
-
+/* Блок для текста */
 .main_text {
     width: 50%;
     padding-right: 331px;
@@ -190,88 +218,90 @@ body {
 .goods {
     display: flex;
     flex-direction: column;
-    padding-top: 65px;
     padding-left: 230px;
     padding-right: 230px;
     margin: 0 auto;
+    margin-bottom: 90px;
 }
 
 
 /* Блок с тремя товарами */
 .goods_small {
     margin-bottom: 30px;
-    height: 260px;
     display: flex;
     flex-direction: row;
-
     flex-wrap: nowrap;
 }
 
-.goods_positions {
+.goods_women,
+.goods_man {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    flex-grow: 1;
-}
-
-.goods_1,
-.goods_2 {
     padding-right: 30px;
-    height: 260px;
 }
 
-.goods_3 {
-    height: 260px;
+.goods_kid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.for_goods_text {
+.goods_text_block {
     position: absolute;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.small_white_text {
+.goods_white_text {
     font-weight: 400;
-    line-height: 19, 2px;
     font-size: 16px;
+    line-height: 19px;
     color: #FFFFFF;
-    height: 85%;
-    width: 95%;
 }
 
-.big_pink_text {
+.goods_pink_text {
     font-weight: 700;
     font-size: 24px;
-    line-height: 28, 8px;
+    line-height: 28px;
     color: #F16D7F;
-    height: 105%;
-    width: 95%;
 }
 
 /* Блок с одним товаром */
 .goods_wide {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 180px;
+
+}
+
+.goods_wide_text {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
 
 .white_text_accesories {
     font-weight: 400;
-    line-height: 19, 2px;
     font-size: 16px;
     color: #FFFFFF;
-    height: 65%;
-    width: 100%;
 }
 
 .pink_text_accesories {
     font-weight: 700;
     font-size: 24px;
-    line-height: 28, 8px;
     color: #F16D7F;
-    height: 90%;
-    width: 100%;
 }
 
 /* Тень для карточек с товарами */
@@ -284,12 +314,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 96px;
+    justify-content: center;
+    padding-bottom: 48px;
+}
+
+.featured_items_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .featured_items_header {
     font-family: Lato;
-    font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 36px;
@@ -299,7 +336,6 @@ body {
 
 .featured_items_text {
     font-family: Lato;
-    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
@@ -312,10 +348,7 @@ body {
 .goods_big {
     display: flex;
     flex-direction: column;
-    padding-top: 48px;
-    padding-left: 230px;
-    padding-right: 230px;
-
+    width: 1140px;
 }
 
 /* Первая группа карточек */
@@ -329,13 +362,11 @@ body {
 .goods_group_2 {
     display: flex;
     flex-direction: row;
-    padding-bottom: 48.5px;
+    padding-bottom: 50px;
 }
 
 /* Общий серый фон для карточек */
 .product_background {
-    position: relative;
-    height: 581px;
     width: 360px;
 }
 
@@ -348,24 +379,26 @@ body {
 
 /* Отдельный класс для карточки с женщиной, т.к. там есть фон у картинки */
 .product_img_w {
-    height: 400px;
-    width: 141, 94px;
     position: absolute;
-    padding-left: 7%;
+    align-self: center;
 }
 
 .product_1,
-.product_2,
-.product_3 {
+.product_2 {
     padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+}
+
+.product_3 {
     display: flex;
     flex-grow: 1;
 }
 
 /* Текст на карточках */
 .product_text_big {
-    font-family: Lato;
-    font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
@@ -376,8 +409,6 @@ body {
 }
 
 .product_text_small {
-    font-family: Lato;
-    font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -388,8 +419,6 @@ body {
 }
 
 .product_price {
-    font-family: Lato;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19, 2px;
@@ -403,23 +432,28 @@ body {
 .button_all_product {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-decoration: none;
     padding-bottom: 95.5px;
 }
 
-.button_all_product_img {
-    position: absolute;
+.button_all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 211px;
+    height: 47px;
+    border: 1px solid #FF6A6A;
 }
 
 .button_all_product_text {
-    position: relative;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
     text-decoration: none;
-    padding-top: 14.5px;
 }
 
 .hover:hover {
@@ -428,7 +462,7 @@ body {
 
 /* Блок с преимуществами */
 .advantages {
-    background: url(/images/advantages_back.png) center no-repeat;
+    background: url(../images/advantages_back.png) center no-repeat;
     height: 341px;
     display: flex;
     flex-direction: row;
@@ -466,8 +500,8 @@ body {
 
 /* Футер с цитатой и подпиской */
 .footer_about {
-    background: url(/images/footer_background.png) center no-repeat,
-        url(/images/footer_main_img.png) center no-repeat;
+    background: url(../images/footer_background.png) center no-repeat,
+        url(../images/footer_main_img.png) center no-repeat;
 
     height: 448px;
     display: flex;
@@ -589,7 +623,7 @@ body {
 
 /* КОНТАКТЫ И СОЦ. СЕТИ */
 .footer_contact {
-    background: url(/images/footer_background_contact.png);
+    background: url(../images/footer_background_contact.png);
     height: 79px;
     display: flex;
     flex-direction: row;
