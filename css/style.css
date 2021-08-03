@@ -92,7 +92,8 @@ body {
     display: none;
     position: absolute;
     background-color: #fff;
-    top: 75px;
+    top: 74px;
+    z-index: 10;
 }
 
 .menu_item {
@@ -207,8 +208,7 @@ body {
 .goods {
     display: flex;
     flex-direction: column;
-    padding-left: 230px;
-    padding-right: 230px;
+    width: 1140px;
     margin: 0 auto;
     margin-bottom: 90px;
 }
