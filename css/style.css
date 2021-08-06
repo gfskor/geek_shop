@@ -521,12 +521,15 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-/* Текст SUBSCRIBE FOR OUR NEWLETTER AND PROMOTION */
+.subscribe_text {
+    padding-bottom: 25px;
+}
+
 .subscribe_text_header {
     font-weight: bold;
     font-size: 24px;
@@ -542,61 +545,52 @@ body {
     color: #222224;
 }
 
-/* Блок поля ввода и кнопки */
+/* ПОЛЕ ДЛЯ ВВОДА ЭЛ. АДРЕСА И КНОПКА */
 .subscribe_form {
     display: flex;
     flex-direction: row;
-    padding-top: 15px;
 }
 
+/* Поле ввода эл. почты */
 .subscribe_field {
     width: 256px;
     height: 49px;
+    border-radius: 30px 0 0 30px;
+    background: #E1E1E1;
+    padding-left: 22px;
+    border: #E1E1E1;
+    color: #222224;
+    opacity: 0.67;
+    outline: none;
+    font-size: 14px;
+    line-height: 17px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
 
 }
 
+/* Кнопка "Subscribe" */
 .subscribe_button {
+    width: 100px;
+    height: 49px;
     display: flex;
     font-display: row;
     justify-content: center;
     align-items: center;
-}
-
-/* Поле для ввода эл. почты */
-.form_field_img {
-    position: absolute;
-    display: flex;
-}
-
-.form_field_text {
-    padding-left: 22px;
-    font-weight: 400;
+    border-radius: 0 30px 30px 0;
+    background: #F16D7F;
     font-size: 14px;
     line-height: 17px;
-    color: #222224;
-    opacity: 0.67;
-}
-
-/* Кнопка отправки эл. почты */
-.form_button_img {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.form_button_text {
-    position: absolute;
-    font-size: 14px;
-    line-height: 17px;
     text-align: center;
     color: #FFFFFF;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
-/* КОНТАКТЫ И СОЦ. СЕТИ */
+/* ПОДПИСЬ И СОЦ. СЕТИ */
 .footer_contact {
     background: url(../images/footer_background_contact.png);
     height: 79px;
@@ -630,7 +624,111 @@ body {
     justify-content: center;
 }
 
-/* ОТСТУПЫ ДЛЯ КНОПОК СОЦ. СЕТЕЙ */
+/* Отступ для кнопок соц. сетей */
 .social_padding {
     padding-right: 7px;
+}
+
+/* СТРАНИЦА КАТАЛОГА */
+.header_catalog_page {
+    background-image: url(../images/catalog_rectangle_header.png);
+    min-height: 148px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.header_page_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-grow: 1;
+
+}
+
+.new_arrivals {
+    width: 50%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new_arrivals_text {
+    width: 194px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+
+}
+
+.arrivals_breadcrumbs {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrivals_breadcrumbs_text {
+    width: 209px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    text-decoration: none;
+}
+
+/* БЛОК С ФИЛЬТРАМИ */
+.filter_block {
+    min-height: 20px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.filter_menu {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.filter_text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+    align-self: center;
+}
+
+.filter_icon {
+    align-self: center;
+    padding-left: 11px;
+
+}
+
+.filter_main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.filter_tranding,
+.filter_size,
+.filter_price {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    align-self: center;
+    padding-right: 10px;
+}
+
+/* БЛОК НАВИГАЦИИ */
+.navigation_block {
+    min-height: 40px;
+    margin-bottom: 95px;
 }
