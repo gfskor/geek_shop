@@ -92,6 +92,8 @@ body {
   background-color: #fff;
   top: 75px;
   z-index: 10;
+  box-shadow: 0 5px 5px #2c2a2a;
+  background-color: #ffffff;
 }
 
 .menu_item {
@@ -720,7 +722,8 @@ body {
 .filter_block {
   min-height: 20px;
   display: flex;
-  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 65px;
 }
 
 .filter_menu {
@@ -728,6 +731,56 @@ body {
   flex-direction: row;
   flex-grow: 1;
   justify-content: center;
+}
+
+.filter_menu_block {
+  display: none;
+  width: 360px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10;
+  box-shadow: 0 5px 15px;
+}
+
+.header_category_filter {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  padding-left: 33px;
+  padding-top: 5px;
+}
+
+.header_menu_filter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding-left: 33px;
+}
+
+.color_filter_header {
+  color: #6F6E6E;
+}
+
+.border_filter {
+  padding-left: 15px;
+}
+
+.link_block_filter {
+  padding-top: 40px;
+}
+
+.rectangle_filter {
+  height: 37px;
+  width: 5px;
+  left: 16px;
+  top: 40.5px;
+  position: relative;
+}
+
+.filter_menu:hover .filter_menu_block {
+  display: flex;
 }
 
 .filter_text {
