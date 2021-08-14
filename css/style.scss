@@ -699,10 +699,10 @@ body {
 .new_arrivals {
     width: 50%;
     display: flex;
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    padding-left: 230px;
 }
 
 .new_arrivals_text {
@@ -731,21 +731,30 @@ body {
     text-decoration: none;
 }
 
-/* БЛОК С ФИЛЬТРАМИ */
+/* ГЛАВНЫЙ БЛОК С ФИЛЬТРАМИ */
 .filter_block {
     min-height: 20px;
     display: flex;
-    position: relative;
+    flex-direction: row;
     padding-bottom: 65px;
 }
 
-.filter_menu {
+/* Первый блок с фильтром */
+.filter_text_box {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
-    justify-content: center;
+    padding-left: 237px;
+    position: relative;
+    width: 390px;
 }
 
+.filter_icon {
+    align-self: center;
+    padding-left: 10px;
+}
+
+
+/* Выпадающее меню из фильтра */
 .filter_menu_block {
     display: none;
     width: 360px;
@@ -753,6 +762,43 @@ body {
     background-color: #fff;
     z-index: 10;
     box-shadow: 0 5px 15px;
+    padding-bottom: 39px;
+    left: 227px;
+    top: -10px;
+}
+
+.filter_text_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+}
+
+.filter_text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+    align-self: center;
+}
+
+.filter_text_box:hover .filter_menu_block {
+    display: flex;
+}
+
+.padding_menu {
+    padding-left: 9px;
+    padding-top: 10px;
+}
+
+.filter_text_red {
+    color: #EF5B70;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    align-self: center;
 }
 
 .header_category_filter {
@@ -789,46 +835,86 @@ body {
     height: 37px;
     width: 5px;
     left: 16px;
-    top: 40.5px;
+    top: 39px;
     position: relative;
 }
 
-.filter_menu:hover .filter_menu_block {
-    display: flex;
-}
 
-.filter_text {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    text-decoration: none;
-    align-self: center;
-}
-
-.filter_icon {
-    align-self: center;
-    padding-left: 11px;
-
-}
-
+/* *Второй блок с фильтрами */
 .filter_main {
-    flex-grow: 1;
+    width: 750px;
     display: flex;
-    justify-content: center;
+
 }
 
-.filter_tranding,
-.filter_size,
-.filter_price {
+.filter_main_item {
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
     align-self: center;
-    padding-right: 10px;
+    padding-right: 30px;
 }
+
+/* Маленький выпадающий фильтр */
+.filter_small {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 10;
+    position: absolute;
+    box-shadow: 0 0 5px;
+    margin-top: 10px;
+}
+
+.check_box_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item_first {
+    padding: 10px 0 0 10px;
+}
+
+.item_center {
+    padding: 10px 0 0 10px;
+}
+
+.item_last {
+    padding: 10px 0 10px 10px;
+}
+
+.filter_main_item_text {
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+    display: none
+}
+
+/* Убираем стандартный маркер Firefox */
+details>summary {
+    list-style: none;
+}
+
+/* Добавляем собственный маркер для закрытого состояния */
+details summary:after {
+    content: url(../images/arrow_filter.png);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.summary {
+    cursor: pointer;
+}
+
+
+
 
 /* БЛОК НАВИГАЦИИ */
 .navigation_block {
